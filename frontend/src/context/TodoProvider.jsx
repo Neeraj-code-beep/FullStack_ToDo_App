@@ -24,7 +24,6 @@ const TodoProvider = ({ children }) => {
   };
 
   // Delete
-
   const deleteTodo = async (id) => {
     await API.delete(`/todos/${id}`);
     toast.success('Todo Deleted');
